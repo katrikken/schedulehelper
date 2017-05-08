@@ -1,0 +1,223 @@
+<table border="0" cellpadding="2" cellspacing="0" class="tab1" width="100%">
+    <tr class="head1">
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu začnete rozvrhovat lístek.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu odrozvrhnete lístek.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu se dostanete na editaci lístku.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu se dostanete na úpravu rozvržení');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu zduplikujete lístek.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu se dostanete do dialogu pro přidávávní a odebírání studentů.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím na ikonu smažete lístek.');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td width="16">
+            <img src="../img/div_tip.gif" style="cursor: help; margin-left: 3px;" onmousemove="ShowHint('hint',this.id,0,'Kliknutím zobrazíte detail lístku');" onmouseout="HideHint('hint');" alt="" title="">
+        </td>
+        <td>Kód lístku ( typ)</td>
+        <td>Název předmětu</td>
+        <td>Učitelé</td>
+        <td>Čas</td>
+        <td>Učebna</td>
+        <td>Délka</td>
+        <td>Jazyk</td>
+        <td>Přihlášeno studentů (kapacita)</td>
+        <td>Studenti</td>
+    </tr>
+    <tr class="row1">
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16">
+            <a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013p1&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_n_zoom.png"  alt="detail" title="detail">
+            </a>
+        </td>
+        <td><a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013p1&amp;fak=11320"  class="link1">16aNPRG013p1</a></td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1"><span style="font-weight:bold;">Java</span></a>
+        </td>
+        <td>Hnětynka Petr, doc. RNDr., Ph.D. 
+            <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli">
+            </a> 
+            <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele">
+            </a>
+        </td>
+        <td>St 14:00</td>
+        <td>S3  </td>
+        <td>90 </td>
+        <td>čeština</td>
+        <td>89</td>
+        <td>
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Forma=P');" onmouseout="HideHint('hint');">I/2-I2`P</span>
+            </a> 
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=3&amp;paralelka=I3&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=3 Paralelka=I3 Forma=P');" onmouseout="HideHint('hint');">I/3-I3`P</span>
+            </a> 
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=M&amp;rocnik=2&amp;kombinace=MZUIZV&amp;paralelka=U2&amp;kruh=75&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=M Ročník=2 Obor/kombinace=MZUIZV Paralelka=U2 Kruh=75 Forma=P');" onmouseout="HideHint('hint');">M/2/MZUIZV-U2.75`P</span>
+            </a> 
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=%5BPRF%5DBINF&amp;rocnik=2&amp;kombinace=BBINF&amp;paralelka=I2B&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=[PRF]BINF Ročník=2 Obor/kombinace=BBINF Paralelka=I2B Forma=P');" onmouseout="HideHint('hint');">[PRF]BINF/2/BBINF-I2B`P</span></a>
+        </td>
+    </tr>
+    <tr class="row2">
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16">
+            <a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013p2&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail"></a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013p2&amp;fak=11320"  class="link1">16aNPRG013p2</a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1"><span style="font-weight:bold;">Java</span>
+            </a>
+        </td>
+        <td>Hnětynka Petr, doc. RNDr., Ph.D. 
+            <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli">
+            </a> 
+            <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele">
+            </a>
+        </td>
+        <td>Út 10:40</td>
+        <td>S6  </td>
+        <td>90 </td>
+        <td>angličtina</td>
+        <td>15 (25)</td>
+        <td>
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;kombinace=IOIA&amp;paralelka=I2Z&amp;kruh=49&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Obor/kombinace=IOIA Paralelka=I2Z Kruh=49 Forma=P');" onmouseout="HideHint('hint');">I/2/IOIA-I2Z.49`P</span>
+            </a>
+        </td>
+    </tr>
+    <tr class="row1">
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16">
+            <a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x01&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail">
+            </a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x01&amp;fak=11320"  class="link1">16aNPRG013x01</a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a>
+        </td>
+        <td>Kofroň Jan, RNDr., Ph.D. 
+            <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=11288&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli">
+            </a> 
+            <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=11288&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele">
+            </a>
+        </td>
+        <td>St 12:20</td>
+        <td>SU2 
+            <a href="http://www.ms.mff.cuni.cz/labs/" target="_blank">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'fakultní informace o místnosti');" onmouseout="HideHint('hint');">
+                    <img src="../img/ico_n_link_go.png" alt="fakultní informace o místnosti" title="fakultní informace o místnosti"/>
+                </span>
+            </a> 
+        </td>
+        <td>90 </td>
+        <td>čeština</td>
+        <td>22 (24)</td>
+        <td>
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;kruh=39&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Kruh=39 Forma=P');" onmouseout="HideHint('hint');">I/2-I2.39`P</span>
+            </a> 
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=%5BPRF%5DBINF&amp;rocnik=2&amp;kombinace=BBINF&amp;paralelka=I2B&amp;kruh=28&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=[PRF]BINF Ročník=2 Obor/kombinace=BBINF Paralelka=I2B Kruh=28 Forma=P');" onmouseout="HideHint('hint');">[PRF]BINF/2/BBINF-I2B.28`P</span>
+            </a>
+        </td>
+    </tr>
+    <tr class="row2">
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16">
+            <a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x02&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_n_zoom.png"  alt="detail" title="detail">
+            </a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x02&amp;fak=11320"  class="link1">16aNPRG013x02</a>
+        </td>
+        <td>
+            <a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a>
+        </td>
+        <td>Arcaini Paolo, Ph.D. 
+            <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=50865&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli">
+            </a> 
+            <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=50865&amp;skr=2016&amp;sem=1&amp;fak=11320" >
+                <img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele">
+            </a>
+        </td>
+        <td>Čt 15:40</td>
+        <td>SU2 <a href="http://www.ms.mff.cuni.cz/labs/" target="_blank"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'fakultní informace o místnosti');" onmouseout="HideHint('hint');"><img src="../img/ico_n_link_go.png" alt="fakultní informace o místnosti" title="fakultní informace o místnosti"/></span></a> </td>
+        <td>90 </td>
+        <td>angličtina</td>
+        <td>8 (24)</td>
+        <td><a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;kombinace=IOIA&amp;paralelka=I2Z&amp;kruh=49&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Obor/kombinace=IOIA Paralelka=I2Z Kruh=49 Forma=P');" onmouseout="HideHint('hint');">I/2/IOIA-I2Z.49`P</span></a>
+        </td>
+    </tr>
+    <tr class="row1">
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"></td>
+        <td width="16"><a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x03&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail"></a></td><td><a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x03&amp;fak=11320"  class="link1">16aNPRG013x03</a></td><td><a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a></td><td>Hnětynka Petr, doc. RNDr., Ph.D. <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli"></a> <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele"></a></td><td> </td><td>  </td><td>90 </td><td>čeština</td><td>23</td><td><a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Forma=P');" onmouseout="HideHint('hint');">I/2-I2`P</span></a> <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=3&amp;paralelka=I3&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=3 Paralelka=I3 Forma=P');" onmouseout="HideHint('hint');">I/3-I3`P</span></a> <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=N&amp;program=I&amp;rocnik=4&amp;paralelka=I45&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=N Program=I Ročník=4 Paralelka=I45 Forma=P');" onmouseout="HideHint('hint');">I/4-I45`P</span></a></td></tr><tr class="row2"><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"><a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x04&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail"></a></td><td><a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x04&amp;fak=11320"  class="link1">16aNPRG013x04</a></td><td><a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a></td><td>Hnětynka Petr, doc. RNDr., Ph.D. <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli"></a> <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele"></a></td><td>Út 12:20</td><td>SU2 <a href="http://www.ms.mff.cuni.cz/labs/" target="_blank"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'fakultní informace o místnosti');" onmouseout="HideHint('hint');"><img src="../img/ico_n_link_go.png" alt="fakultní informace o místnosti title="fakultní informace o místnosti"/></span></a> </td><td>90 </td><td>čeština</td><td>22 (24)</td><td><a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;kruh=32&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Kruh=32 Forma=P');" onmouseout="HideHint('hint');">I/2-I2.32`P</span></a> <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;kruh=33&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Kruh=33 Forma=P');" onmouseout="HideHint('hint');">I/2-I2.33`P</span></a></td></tr><tr class="row1"><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"><a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x05&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail"></a></td><td><a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x05&amp;fak=11320"  class="link1">16aNPRG013x05</a></td><td><a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a></td><td>Hnětynka Petr, doc. RNDr., Ph.D. <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli"></a> <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=10854&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele"></a></td><td>Po 14:00</td><td>SU2 <a href="http://www.ms.mff.cuni.cz/labs/" target="_blank"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'fakultní informace o místnosti');" onmouseout="HideHint('hint');"><img src="../img/ico_n_link_go.png" alt="fakultní informace o místnosti title="fakultní informace o místnosti"/></span></a> </td><td>90 </td><td>čeština</td><td>22 (24)</td><td><a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;kruh=38&amp;forma=P" class="link2"><span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Kruh=38 Forma=P');" onmouseout="HideHint('hint');">I/2-I2.38`P</span></a></td></tr><tr class="row2"><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"></td><td width="16"><a href="../rozvrhng/roz_predmet_gl.php?gl=16aNPRG013x06&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_n_zoom.png"  alt="detail" title="detail"></a></td><td><a href="../rozvrhng/roz_predmet_gl.php?skr=2016&amp;sem=1&amp;gl=16aNPRG013x06&amp;fak=11320"  class="link1">16aNPRG013x06</a></td><td><a href="../rozvrhng/roz_predmet_macro.php?skr=2016&amp;sem=1&amp;ustav=32-KDSS&amp;predmet=NPRG013&amp;fak=11320"  class="link1">Java</a></td><td>Kofroň Jan, RNDr., Ph.D. <a href="../predmety/redir.php?redir=sezn_ucit&amp;kod=11288&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_ucitel_small.png"  alt="informace o učiteli" title="informace o učiteli"></a> <a href="../rozvrhng/roz_ucitel_macro.php?ucitel=11288&amp;skr=2016&amp;sem=1&amp;fak=11320" ><img src="../img/ico_rozvrhng.png"  alt="rozvrh učitele" title="rozvrh učitele"></a></td><td>Pá 9:00</td>
+        <td>SU2 
+            <a href="http://www.ms.mff.cuni.cz/labs/" target="_blank">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'fakultní informace o místnosti');" onmouseout="HideHint('hint');">
+                    <img src="../img/ico_n_link_go.png" alt="fakultní informace o místnosti" title="fakultní informace o místnosti"/>
+                </span>
+            </a> 
+        </td>
+        <td>90 </td>
+        <td>čeština</td>
+        <td>10 (24)</td>
+        <td>
+            <a href="../rozvrhng/roz_student_macro.php?fak=11320&amp;skr=2016&amp;sem=1&amp;druh=B&amp;program=I&amp;rocnik=2&amp;paralelka=I2&amp;kruh=31&amp;forma=P" class="link2">
+                <span class="nowrap" onmouseover="ShowHint('hint', this.id, 0, 'Druh=B Program=I Ročník=2 Paralelka=I2 Kruh=31 Forma=P');" onmouseout="HideHint('hint');">I/2-I2.31`P</span>
+            </a>
+        </td>
+    </tr>
+</table>
