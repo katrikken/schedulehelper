@@ -48,7 +48,7 @@ public class ScheduleBlock {
             }
         }
         catch(java.time.format.DateTimeParseException ex){
-            Logger.getLogger("ScheduleBlock").log(Level.WARNING, "Invalid time of: " + subject + " " + time);
+            Logger.getLogger("ScheduleBlock").log(Level.WARNING, "Invalid time of: {0} {1}", new Object[]{subject, time});
             this.time = LocalTime.MIDNIGHT;
         }
         
@@ -66,16 +66,15 @@ public class ScheduleBlock {
         }
         catch(Exception e){
             this.length = 0;
-            Logger.getLogger("ScheduleBlock").log(Level.WARNING, subject + " length parsing error " + e.getMessage());
+            Logger.getLogger("ScheduleBlock").log(Level.WARNING, "{0} length parsing error {1}", new Object[]{subject, e.getMessage()});
         }
     }
     
     /**
-     * This method overrides inherited toString() method 
-     * @return basic information about this instance to fill in the button text. 
+     * This method returns short information about this instance for representing on the related @MyButton instance.
+     * @return String
      */
-    @Override
-    public String toString(){
+    public String getShortInfo(){
         String space = " ";
         String nl = "<br>";
         return "<html>" + subject + space + language + nl +
@@ -83,7 +82,20 @@ public class ScheduleBlock {
     }
     
     /**
-     * This method checks whether the other ScheduleBlock instance is of the same type as this object.
+     * This method returns formatted information about this instance of a @SchedulBlock.
+     * @return String.
+     */
+    public String getFullInfo(){
+        String space = " ";
+        String nl = "\n";
+        return subject + space + type.toString() + nl + 
+                room + space + teacher + nl +
+                day.toString() + space + time.toString() + space + additional + nl +
+                language + nl;            
+    }
+    
+    /**
+     * This method checks whether the other @ScheduleBlock instance is of the same type as this object.
      * @param other
      * @return true if the other ScheduleBlock instance is for the same subject and is of the same SubjectType.
      */
@@ -92,9 +104,9 @@ public class ScheduleBlock {
     }
     
     /**
-     * This method checks whether the other ScheduleBlock instance has the same time slot as this object. 
+     * This method checks whether the other @ScheduleBlock instance has the same time slot as this object. 
      * @param other
-     * @return true if the other ScheduleBlock instance has the same day and time attributes.
+     * @return true if the other @ScheduleBlock instance has the same day and time attributes.
      */
     public Boolean isAtSameTime(ScheduleBlock other){
         return this.day.equals(other.day) && this.time.equals(other.time);

@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * This class is a specific container for the MyButton class instances.
+ * This class is a specific container for the @MyButton class instances.
  * @author Ekaterina Kurysheva
  */
 public class MyButtonList {      
@@ -20,7 +20,7 @@ public class MyButtonList {
 
     /**
      * Getter for the Monday attribute.
-     * @return list containing buttons associated with ScheduleBlock instances from Monday time slots.
+     * @return list containing buttons associated with @ScheduleBlock instances from Monday time slots.
      */
     public List<MyButton> getMonday() {
         return Monday;
@@ -28,7 +28,7 @@ public class MyButtonList {
 
     /**
      * Getter for the Tuesday attribute.
-     * @return list containing buttons associated with ScheduleBlock instances from Tuesday time slots.
+     * @return list containing buttons associated with @ScheduleBlock instances from Tuesday time slots.
      */
     public List<MyButton> getTuesday() {
         return Tuesday;
@@ -36,7 +36,7 @@ public class MyButtonList {
 
     /**
      * Getter for the Wednesday attribute.
-     * @return list containing buttons associated with ScheduleBlock instances from Wednesday time slots.
+     * @return list containing buttons associated with @ScheduleBlock instances from Wednesday time slots.
      */
     public List<MyButton> getWednesday() {
         return Wednesday;
@@ -44,7 +44,7 @@ public class MyButtonList {
 
     /**
      * Getter for the Thursday attribute.
-     * @return list containing buttons associated with ScheduleBlock instances from Thursday time slots.
+     * @return list containing buttons associated with @ScheduleBlock instances from Thursday time slots.
      */
     public List<MyButton> getThursday() {
         return Thursday;
@@ -52,14 +52,14 @@ public class MyButtonList {
 
     /**
      * Getter for the Friday attribute.
-     * @return list containing buttons associated with ScheduleBlock instances from Friday time slots.
+     * @return list containing buttons associated with @ScheduleBlock instances from Friday time slots.
      */
     public List<MyButton> getFriday() {
         return Friday;
     }
     
     /**
-     * Getter for the attribute containing buttons associated with ScheduleBlock instances with no specified time.
+     * Getter for the attribute containing buttons associated with @ScheduleBlock instances with no specified time.
      * @return list of buttons.
      */
     public List<MyButton> getUnknown() {
@@ -112,7 +112,7 @@ public class MyButtonList {
                             break;
                 case Unknown: Unknown.add(button);
                             break;
-                default: Logger.getLogger("MyButton container").log(Level.WARNING, "Unknown day: " + button.block.day);
+                default: Logger.getLogger("MyButton container").log(Level.WARNING, "Unknown day: {0}", button.block.day);
                     break;
             }
         }

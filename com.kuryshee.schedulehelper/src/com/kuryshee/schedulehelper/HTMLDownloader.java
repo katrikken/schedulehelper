@@ -9,7 +9,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 /**
- * This class downloads data from SIS and parses it into ScheduleBlock class instances. 
+ * This class downloads data from SIS and parses it into @ScheduleBlock class instances. 
  * @author Ekaterina Kurysheva
  */
 public class HTMLDownloader {
@@ -20,7 +20,7 @@ public class HTMLDownloader {
     String subject = "predmet=";
     String amp = "&";
     
-    //zero-bazed, table columns contain:
+    //Zero-bazed, table columns contain:
     //1. X or P
     //2. subject name
     //3. teacher name
@@ -28,7 +28,7 @@ public class HTMLDownloader {
     //5. Room //optional
     //6. Length
     //7. lang
-    // This part may change over time as SIS pages evolve.
+    // This part may change over time as SIS pages evolves.
     
     int subNameTD = 2;
     int teacherTD = 3;
@@ -43,7 +43,7 @@ public class HTMLDownloader {
      * @param yearPar school year
      * @param semPar semester number    
      * @param subjPar subject code
-     * @return list of ScheduleBlock instances bounded to time slots, when the subject is taught.
+     * @return list of @ScheduleBlock instances bounded to time slots, when the subject is taught.
      * @throws IOException when downloading of HTML fails.
      */
     public List <ScheduleBlock> Download(String facPar, String yearPar, String semPar, String subjPar) throws IOException {
@@ -61,14 +61,14 @@ public class HTMLDownloader {
         
         for(Element e: elements){ 
 
-            String subject;
+            String subjectName;
             SubjectType type;
             if(e.child(subNameTD).child(0).children().isEmpty()){
-                subject = e.child(subNameTD).child(0).text();
+                subjectName = e.child(subNameTD).child(0).text();
                 type = SubjectType.PRACTICE;
             }
             else{
-                subject = e.child(subNameTD).child(0).child(0).text();
+                subjectName = e.child(subNameTD).child(0).child(0).text();
                 type = SubjectType.LECTURE;
             }      
             String teacher = e.child(teacherTD).text().trim();
@@ -89,7 +89,7 @@ public class HTMLDownloader {
             String length = e.child(lengthTD).text().trim();
             String language = e.child(langTD).text().trim();
         
-            blocks.add(new ScheduleBlock(subject, teacher, day, time, room, language, type, length));
+            blocks.add(new ScheduleBlock(subjectName, teacher, day, time, room, language, type, length));
         }
         
         return blocks;

@@ -15,7 +15,9 @@ import java.awt.FlowLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
@@ -28,6 +30,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -40,9 +43,10 @@ import javax.swing.JSeparator;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
- *
+ * This class sets up the graphical interface. It contains the main method of the program..
  * @author Ekaterina Kurysheva.
  */
 public class GUI {
@@ -98,7 +102,60 @@ public class GUI {
         }
     }
     
-    /**TODO add saving
+    /**
+     * This method writes the information about selected schedule blocks to the provided output writer.
+     * @param writer
+     * @throws IOException
+     */
+    private static void writeChosenSchedule(BufferedWriter writer) throws IOException{
+        for (MyButton b: mylist.getAllButtons()){
+            if (b.isChosen()){
+                writer.write(b.block.getFullInfo());
+                writer.newLine();
+            }
+        }
+    }
+    
+    /**
+     * This method invokes file choosing dialog for writing the output.
+     * @param evt 
+     */
+    private static void saveActionPerformed(){
+        JFileChooser chooser = new JFileChooser();
+        chooser.setDialogType(JFileChooser.OPEN_DIALOG);
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Text files", "txt");
+        chooser.setFileFilter(filter);
+        int returnVal = chooser.showOpenDialog(frame);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {       
+            try(BufferedWriter bw = new BufferedWriter(new FileWriter(chooser.getSelectedFile()))){
+               writeChosenSchedule(bw);            
+               
+               JOptionPane.showMessageDialog(null, "The schedule was successfully saved.",
+                        "Info", JOptionPane.INFORMATION_MESSAGE);
+            }
+            catch(IOException e){
+                Logger.getLogger("File saving").log(Level.WARNING, "Could not write to the file", e);
+                JOptionPane.showMessageDialog(null, "Failed to save the schedule to the chosen file!",
+                        "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+    
+    /**
+     * This method shows message dialog with short how-to information about the program.
+     */
+    private static void showHelp(){
+        JOptionPane.showMessageDialog(null, "1. Choose the faculty.\n"
+                + "2. Type in the year when the school year started in format YYYY.\n"
+                + "3. Choose the semester.\n"
+                + "4. Enter subject codes separated by semicolon. You can add them all at once or add other subjects later.\n"
+                + "5. Press the Add button to load schedule options.\n"
+                + "6. Click on the loaded options you want to choose. Their color will turn red.\n"
+                + "7. Save the options you chose to the text file through File -> Save.\n",
+                            "How-to", JOptionPane.PLAIN_MESSAGE);
+    }
+    
+    /**
      * This method creates menu.
      * @return menu bar.
      */
@@ -106,13 +163,18 @@ public class GUI {
         JMenuBar mb = new JMenuBar();
         JMenu menu = new JMenu("File");
         JMenuItem item = new JMenuItem("Save");
+        item.addActionListener((ActionEvent evt) -> {
+            saveActionPerformed();
+        });
         menu.add(item);
         mb.add(menu);
 
         menu = new JMenu("Help");
-        item = new JMenuItem("Content");
+        item = new JMenuItem("Show how-to");
+        item.addActionListener((ActionEvent evt) -> {
+            showHelp();
+        });
         menu.add(item);
-        menu.add(new JSeparator());
 
         mb.add(menu);
 
@@ -310,19 +372,6 @@ public class GUI {
         frame.pack();
     }
     
-    /**TODO
-     * This method outputs information about checked buttons.
-     */
-    private static void writeOutput(){
-        
-        ArrayList<MyButton> written = new ArrayList<>();
-        for(MyButton b: mylist.getAllButtons()){
-            if(b.isChosen() && !written.contains(b)){
-                
-            }
-        }
-    }
-    
     /**
      * This method reacts to checking or un-checking buttons associated with time slots.
      * It calls for the methods to change the coloring of the buttons in the schedule.
@@ -381,7 +430,7 @@ public class GUI {
     
     /**
      * This method tries to download contents from SIS if user provided correct data for building the query.
-     * If data were downloaded, the method stores them and creates instances of MyButton class associated with new data.
+     * If data were downloaded, the method stores them and creates instances of @MyButton class associated with new data.
      * @param evt.
      */
     private static void addButtonActionPerformed(ActionEvent evt) {                                                 
@@ -450,6 +499,11 @@ public class GUI {
         pane.add(new JLabel("Year: "));
         yearField.setPreferredSize(new Dimension(50, 25));
         yearField.setToolTipText("YYYY format");
+        int now = LocalDate.now().getYear();
+        if(LocalDate.now().getMonth().compareTo(Month.SEPTEMBER) <= 0){
+            now--;
+        }
+        yearField.setText("" + now);
         pane.add(yearField);
         
         pane.add(new JLabel("Semester: "));

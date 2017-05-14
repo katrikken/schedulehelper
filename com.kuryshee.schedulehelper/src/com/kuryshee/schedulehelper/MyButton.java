@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 
 /**
+ * This class extends the @JButton with attributes for displaying the button as a schedule block in a table. 
  * @author Ekaterina Kurysheva
  */
 public class MyButton extends JButton{
@@ -66,7 +67,7 @@ public class MyButton extends JButton{
     
     /**
      * Constructor.
-     * @param block ScheduleBlock bounded to the button.
+     * @param block @ScheduleBlock bounded to the button.
      */
     public MyButton(ScheduleBlock block){
         this.block = block;
@@ -123,7 +124,7 @@ public class MyButton extends JButton{
     private void setAppearance(int width){  
         double pixels = (double)width/(double)GUI.totalMinutes * (double)block.length;
         this.setPreferredSize(new Dimension((int)pixels, GUI.buttonHeight));
-        this.setText(block.toString());
+        this.setText(block.getShortInfo());
         this.setBackground(myBlue);
     }
    
