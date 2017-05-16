@@ -17,9 +17,10 @@ import java.awt.event.ActionEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
-import java.io.FileWriter;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
@@ -39,7 +40,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -127,7 +127,7 @@ public class GUI {
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(frame);
         if (returnVal == JFileChooser.APPROVE_OPTION) {       
-            try(BufferedWriter bw = new BufferedWriter(new FileWriter(chooser.getSelectedFile()))){
+            try(BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(chooser.getSelectedFile()), "UTF-8"))){
                writeChosenSchedule(bw);            
                
                JOptionPane.showMessageDialog(null, "The schedule was successfully saved.",
@@ -478,7 +478,7 @@ public class GUI {
                     button.addActionListener((ActionEvent ev) -> {
                         scheduleButtonListener(ev);
                     });
-                    button.setToolTipText(b.toString());
+                    button.setToolTipText(b.getShortInfo());
                     button.setVerticalAlignment(SwingConstants.TOP);
                     buttons.add(button);
                 }
