@@ -1,0 +1,7 @@
+To compile the program, Java 1.8 required.
+
+To run the executable file:
+1. Download com.kuryshee.schedulehelper.jar from schedulehelper/com.kuryshee.schedulehelper/dist
+2. Download faculties.txt from schedulehelper/com.kuryshee.schedulehelper. 
+3. Save both files to the same directory.
+4. Run the com.kuryshee.schedulehelper.jar
