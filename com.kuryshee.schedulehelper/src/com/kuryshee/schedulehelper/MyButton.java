@@ -67,7 +67,7 @@ public class MyButton extends JButton{
     
     /**
      * Constructor.
-     * @param block @ScheduleBlock bounded to the button.
+     * @param block is an instance of @ScheduleBlock bounded to the button.
      */
     public MyButton(ScheduleBlock block){
         this.block = block;
