@@ -414,7 +414,7 @@ public class GUI {
             int year = Integer.parseInt(yearField.getText().trim());
             int now = LocalDate.now().getYear();
            
-            if(LocalDate.now().getMonth().compareTo(Month.SEPTEMBER) <= 0){
+            if(LocalDate.now().getMonth().compareTo(Month.SEPTEMBER) < 0){
                 now--;
             }
             //SIS stores the schedule for last 3 years only 

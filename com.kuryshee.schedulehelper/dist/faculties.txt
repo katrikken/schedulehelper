@@ -1,0 +1,18 @@
+11110	1. lékarská fakulta
+11120	3. lékarská fakulta
+11130	2. lékarská fakulta
+11140	Lékarská fakulta v Plzni
+11150	Lékarská fakulta v Hradci Králové
+11160	Farmaceutická fakulta v Hradci Králové
+11210	Filozofická fakulta
+11220	Právnická fakulta
+11230	Fakulta sociálních ved
+11240	Fakulta humanitních studií
+11260	Katolická teologická fakulta
+11270	Evangelická teologická fakulta
+11280	Husitská teologická fakulta
+11310	Prírodovedecká fakulta
+11320	Matematicko-fyzikální fakulta
+11410	Pedagogická fakulta
+11510	Fakulta telesné výchovy a sportu
+ 
